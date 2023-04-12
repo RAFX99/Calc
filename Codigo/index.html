@@ -26,16 +26,18 @@
         <img class="image" src="" alt="" />
         </p>
         <form>
-          <input placeholder="Digite o valor de tempo" class="label_num" type="number">
+          <input placeholder="Digite o valor de tempo" id="tempo_1" class="label_num" type="number">
 
-          <select  class="seletor" name="funcao">
+          <select  id="funcao"class="seletor" name="funcao">
             <option value="exp">Exponencial</option>
             <option value="quad">Quadrática</option>
             <option value="line">Linear</option>
           </select>
-
-          <input class="btn-card" type="submit" value="Calcular" />
-          <input class="btn-card" type="reset" value="Redefinir">
+          <div class="container_btn">
+            <button id="calcular"class="btn-card" >Calcular</button> 
+            <input  type="reset"  id="redefinir_btn"value="Redefinir">
+          </div>
+          
 
         </form>
       </div>
@@ -52,8 +54,10 @@
             <option value="line">Linear</option>
           </select>
 
-          <input class="btn-card" type="submit" value="Calcular" />
-          <input class="btn-card" type="reset" value="Redefinir">
+          <div class="container_btn">
+            <input class="btn-card" type="submit" value="Calcular" />
+            <input  type="reset"  id="redefinir_btn"value="Redefinir">
+          </div>
 
         </form>
       </div>
@@ -70,10 +74,18 @@
             <option value="line">Linear</option>
           </select>
 
-          <input class="btn-card" type="submit" value="Calcular" />
-          <input class="btn-card" type="reset" value="Redefinir">
+          <div class="container_btn">
+            <input class="btn-card" type="submit" value="Calcular" />
+            <input  type="reset"  id="redefinir_btn"value="Redefinir">
+          </div>
 
         </form>
+      </div>
+    </div>
+    <div class="row">
+      <div id="resultado_container"class="card">
+        <p>Resultado: </p>
+        <p id="resultado_p"></p>
       </div>
     </div>
   </div>
@@ -82,7 +94,7 @@
 
     
 
-
+<script src="tempoAltura.js"></script>
 </body>
 
 </html>

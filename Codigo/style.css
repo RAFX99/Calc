@@ -99,8 +99,12 @@ body{
 
 .card:hover{
   transition: all 0.3s ease-out;
-  box-shadow: 7px 7px 13px 0px rgb(24, 139, 233);
+  box-shadow: 7px 7px 13px 0px rgba(255,255,255,0.8);
 
+}
+
+.container_btn{
+  display: flex;
 }
 
 .label_num{
@@ -136,10 +140,28 @@ body{
   height: 40px;
   border-radius: 10px;
   align-items: center;
+  margin: 5px;
  
   
 }
 
+#redefinir_btn{
+  border: 2px solid rgb(24, 139, 233);
+  background-color: rgb(255,255,255);
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  align-items: center;
+  margin: 5px;
+}
+
+#redefinir_btn:hover{
+  background-color: rgb(220,53,69);
+  transition: 0.6s;
+  color: white;
+  border: white;
+}
 .btn-card:hover {
   background-color: rgb(24, 139, 233);
   border:2px solid white;
@@ -147,6 +169,17 @@ body{
   transition: 0.5s;
 }
 
+#resultado_p{
+
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(255,255,255,0.8);
+  width: 300px;
+  height: 20px;
+
+}
 
 .image {
   float: right;
