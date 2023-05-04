@@ -1,9 +1,12 @@
 var tempo = document.getElementById("tempo_1");
 var tempo2 = document.getElementById("tempo_2")
+var lado1 = document.getElementById("lado1");
 var calcular = document.getElementById("calcular");
 var calcular2 = document.getElementById("calcular_2");
+var calcular3 = document.getElementById("calcular3");
 var funcao = document.getElementById('funcao');
 var funcao2 = document.getElementById('funcao_2');
+var funcao3 = document.getElementById('funcao3');
 var resultado_p = document.getElementById('resultado_p');
 var resultado = 0;
 
@@ -37,6 +40,21 @@ calcular2.addEventListener('click', (e) =>{
         resultado_p.innerText = resultado;
     }else if(funcao2.value == "line"){
         resultado = (-9.11 * parseFloat(tempo2.value)) + 167.96;
+        resultado_p.innerText = resultado;
+    }
+    
+    
+})
+
+calcular3.addEventListener('click', (e) =>{
+    e.preventDefault();
+  
+    if(funcao3.value == "AC"){
+        resultado = 32.93 * (Math.pow(2.718281828, (parseFloat(lado1.value) * (-0.18))));
+        resultado_p.innerText = resultado;  
+        
+    }else if(funcao3.value == "PC"){
+        resultado = lado1 + 12 ;
         resultado_p.innerText = resultado;
     }
     
